@@ -1,0 +1,79 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L hostboard:Socket S1
+U 1 1 61A73623
+P 3000 2100
+F 0 "S1" H 2975 2215 50  0000 C CNN
+F 1 "Socket" H 2975 2124 50  0000 C CNN
+F 2 "hostboard:SOCKET" H 3000 2100 50  0001 C CNN
+F 3 "" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61A7512E
+P 2150 2950
+F 0 "#PWR02" H 2150 2700 50  0001 C CNN
+F 1 "GND" V 2155 2822 50  0000 R CNN
+F 2 "" H 2150 2950 50  0001 C CNN
+F 3 "" H 2150 2950 50  0001 C CNN
+	1    2150 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L hostboard:3V3 #PWR01
+U 1 1 61A75B15
+P 2150 2850
+F 0 "#PWR01" H 2150 2700 50  0001 C CNN
+F 1 "3V3" V 2165 2978 50  0000 L CNN
+F 2 "" H 2150 2850 50  0001 C CNN
+F 3 "" H 2150 2850 50  0001 C CNN
+	1    2150 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61A77259
+P 3850 2950
+F 0 "#PWR04" H 3850 2700 50  0001 C CNN
+F 1 "GND" V 3855 2822 50  0000 R CNN
+F 2 "" H 3850 2950 50  0001 C CNN
+F 3 "" H 3850 2950 50  0001 C CNN
+	1    3850 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L hostboard:5V_VIN #PWR03
+U 1 1 61A7744B
+P 3850 2850
+F 0 "#PWR03" H 3850 2700 50  0001 C CNN
+F 1 "5V_VIN" V 3865 2978 50  0000 L CNN
+F 2 "" H 3850 2850 50  0001 C CNN
+F 3 "" H 3850 2850 50  0001 C CNN
+	1    3850 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2850 3550 2850
+Wire Wire Line
+	3550 2950 3850 2950
+Wire Wire Line
+	2400 2850 2150 2850
+Wire Wire Line
+	2150 2950 2400 2950
+$EndSCHEMATC
